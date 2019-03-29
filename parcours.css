@@ -1,0 +1,54 @@
+
+#parcours > h1 {
+    margin:0;
+    padding: 1em;
+    color: var(--color3);
+    background-color: var(--dark);
+}
+
+#parcours > table {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--light-light);
+}
+
+#parcours .logo {
+    height: 6em;
+}
+
+.br-right {
+    border-right: 4px solid var(--light-light);
+    border-radius: 2em;
+}
+
+.br-left {
+    border-left: 4px solid var(--light-light);
+    border-radius: 2em;
+}
+
+#parcours tr {
+    padding: 2em;
+}
+
+#parcours td {
+    width: 50%;
+}
+
+#parcours td {
+    padding: 2em;
+}
+
+#parcours h2 {
+    color: white;
+    padding: 0 1em;
+}
+
+#parcours h3 {
+    color: var(--light-dark);
+    font-size: 1em;
+    font-weight: 100;
+}
+
+#parcours a {
+    color: inherit;
+}
