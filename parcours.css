@@ -8,7 +8,7 @@
 
 #parcours > table {
     width: 80%;
-    margin: 0 auto;
+    margin: 3em auto;
     color: var(--light-light);
 }
 
@@ -26,16 +26,16 @@
     border-radius: 2em;
 }
 
-#parcours tr {
-    padding: 2em;
-}
-
 #parcours td {
     width: 50%;
 }
 
 #parcours td {
-    padding: 2em;
+    padding: 1em 0;
+}
+
+#parcours div {
+    padding: 1em 2em;
 }
 
 #parcours h2 {
