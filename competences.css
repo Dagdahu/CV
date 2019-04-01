@@ -1,0 +1,67 @@
+#competences {
+    color: var(--light-light);
+}
+
+#competences > h1 {
+    margin:0;
+}
+
+#skills {
+    color: var(--dark);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#skills h2 {
+    color: var(--dark-dark);
+    padding: 0.5em 1em;
+}
+
+#skills h3 {
+    color: var(--dark-light);
+    font-size: .75em;
+}
+
+#skills > div {
+    width: 45%;
+    background-color: var(--light-light);
+    border-radius: 2em;
+    padding: 0;
+    margin: 1em 0;
+}
+
+@media screen and (max-width: 500px) {
+    #skills > div {
+        width: 80%;
+    }
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0 .5em;
+}
+
+#skills .skill {
+    top:0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 auto;
+    width: 30%;
+    color: var(--light-light);
+}
+
+#skills .skill > p {
+    margin: 0.5em 0;
+}
+
+#skills .skill:hover {
+    color: var(--dark);
+}
+
+#skills .logo {
+    width: 90%;
+}

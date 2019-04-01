@@ -49,6 +49,36 @@
     font-weight: 100;
 }
 
+#parcours ul {
+    padding-left: 1em;
+}
+
+#parcours li {
+    padding: .5em 0;
+}
+
 #parcours a {
     color: inherit;
 }
+
+#parcours .cliquable {
+    display: inline-block;
+    color: inherit;
+    background-color: var(--color1-dark);
+    padding: .25em .5em;
+    border-radius: .25em;
+    margin: 0.25em 0;
+}
+
+#parcours .cliquable:hover {
+    color: var(--color1-dark);
+    background-color: var(--light-light);
+}
+
+/* #background-transition {
+    height:20vh;
+    background: var(--dark);
+    background: -moz-linear-gradient(top, var(--dark) 0%, var(--light-light) 100%);
+    background: -webkit-linear-gradient(top, var(--dark) 0%, var(--light-light) 100%);
+    background: linear-gradient(to bottom, var(--dark) 0%, var(--light-light) 100%);
+} */

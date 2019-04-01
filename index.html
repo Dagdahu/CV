@@ -4,6 +4,7 @@
 	<title>Hugo CHATEL - CV</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="parcours.css">
+	<link rel="stylesheet" type="text/css" href="competences.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu" rel="stylesheet">
 
 </head>
@@ -34,10 +35,10 @@
 					</h2>
 					<div>
 						<a class='link' href='https://www.linkedin.com/in/chatel-hugo' target='blank'>
-							<img class='tran grow' src='./logos/linkedin.svg' alt='LinkedIn' title='Ouvrir le profil LinkedIn'>
+							<img class='trans grow' src='./logos/linkedin.svg' alt='LinkedIn' title='Ouvrir le profil LinkedIn'>
 						</a>
 						<a class='link' href='https://github.com/Dagdahu/' target='blank'>
-							<img class='tran grow' src='./logos/github.svg' alt='GitHub' title='Ouvrir le profil GitHub'>
+							<img class='trans grow' src='./logos/github.svg' alt='GitHub' title='Ouvrir le profil GitHub'>
 						</a>
 					</div>
 				</div>
@@ -45,6 +46,15 @@
 					<h1>
 						Développeur Web
 					</h1>
+					<div>
+						<img src='./logos/idea_small.png' alt='Idea'>
+						<p>
+							via 
+							<a href='https://absurd.design/' target='blank'>
+								https://absurd.design/
+							</a>
+						</p>
+					</div>
 					<h2>
 						La curiosité est un vilain défaut...<br>
 						Vraiment ?
@@ -100,6 +110,13 @@
 								<h3>
 									ULB - Université Libre de Bruxelles
 								</h3>
+								<p>
+									<ul>
+										<li>
+											Pilotage d'un drone par ordinateur en vue d'une automatisation
+										</li>
+									</ul>
+								</p>
 							</div>
 						</td>
 					</tr>
@@ -163,7 +180,7 @@
 									Ingénieur R&D - Traitement d'Image
 								</h2>
 								<h3>
-									Altamendi - Skaping
+									Altamendi - <a class='cliquable' href="https://www.skaping.com/about/" title='Ouvrir la page Skaping' target='blank'>Skaping</a>
 								</h3>
 								<p>
 									<ul>
@@ -171,7 +188,7 @@
 											Responsable Traitement d'Image
 										</li>
 										<li>
-											Développeur C++ (notamment algorithme SkapeMe - Selfie XXL)
+											Développeur C++ (notamment algorithme SkapeMe - <a class='cliquable' href="https://www.skaping.com/about/selfie-xxl/" title='Découvrir le selfie XXL' target='blank'>Selfie XXL</a>)
 										</li>
 										<li>
 											Développement plugins JS pour l'interface web
@@ -188,18 +205,22 @@
 									Auto formation
 								</h2>
 								<h3>
-									<a href='https://www.udemy.com/' title='Ouvrir la page du site' target='blank'>Udemy</a> - Site de cours en ligne
+									<a class="cliquable" href='https://www.udemy.com/' title='Ouvrir la page du site' target='blank'>Udemy</a> - Site de cours en ligne
 								</h3>
 								<p>
 									<ul>
 										<li>
 											<a href='https://www.udemy.com/the-complete-web-developer-zero-to-mastery/' title='Découvrir le détail de ce cours' target='blank'>
 												The complete Web Developer in 2019 : Zero to Mastery
+												<br>
+												<span class="cliquable">Voir plus</span>
 											</a>
 										</li>
 										<li>
 											<a href='https://www.udemy.com/the-complete-junior-to-senior-web-developer-roadmap/' title='Découvrir le détail de ce cours' target='blank'>
-												The Complete Junior to Senior Web Developer Roadmap (2019)
+												The Complete Junior to Senior Web Developer Roadmap (en cours)
+												<br>
+												<span class="cliquable">Voir plus</span>
 											</a>
 										</li>
 									</ul>
@@ -213,13 +234,90 @@
 						</td>
 					</tr>
 				</table>
+				<div id="background-transition">
+				</div>
 			</div>
 			
 			<div id='competences' class="page">
 				<h1>
 					Compétences
 				</h1>
-				<a class='toTop' href="#accueil">🔝</a>
+				<div id='skills'>
+					<div>
+						<h2 class='title'>
+							Front-End
+						</h2>
+						<div class="tac">
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/HTML5.svg' alt='HTML5 logo' title='HTLM5'>
+								<p>HTML5</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/CSS3.svg' alt='CSS3 logo' title='CSS3'>
+								<p>CSS3</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/JS2.svg' alt='JavaScript logo' title='JavaScript'>
+								<p>JavaScript</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/React.svg' alt='React logo' title='React'>
+								<p>React</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/Redux.svg' alt='Redux logo' title='Redux'>
+								<p>Redux</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 class='title'>
+							Back-End
+						</h2>
+						<div class="tac">
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/NodeJS.svg' alt='Node.js logo' title='Node.js'>
+								<p>Node.js</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/database.svg' alt='Data base logo' title='Base de donnée'>
+								<p>MySQL</p>
+								<p>PostgreSQL</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h2 class='title'>
+							Outils
+						</h2>
+						<ul>
+							<li>
+								<h3>
+									Environnement de travail
+								</h3>
+								<p>
+									Linux (Ubuntu)
+								</p>
+							</li>
+							<li>
+								<h3>
+									Editeur de code
+								</h3>
+								<p>
+									Visual Studio Code
+								</p>
+							</li>
+							<li>
+								<h3>
+									Gestion de code
+								</h3>
+								<p>
+									GitHub
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			
 			<div id='projets' class="page">

@@ -11,9 +11,15 @@ body {
     --dark-light: #3e3a39;
     --dark:#2b2726;
     --dark-dark: #282423;
-    --color1:#0a516d;
+    --color1-light:#6390a2;
+    --color1:#367087;
+    --color1-dark:#0a516d;
+    --color2-light:#2f9ca4;
     --color2:#018790;
+    --color2-dark:#016f76;
+    --color3-light:#f88f73;
     --color3:#f77754;
+    --color3-dark:#cb6245;
     --nav-height: 3em;
     --page-height: calc(100vh - var(--nav-height));
     --trans-time: .15s;
@@ -24,17 +30,21 @@ body {
     background-color: var(--dark);
 }
 
+.test {
+    fill: yellow;
+}
+
 body > div {
     width: 100vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     body {
       font-size: 16px;
     }
 }
   
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     body {
         font-size: 8px;
     }
@@ -51,6 +61,7 @@ body > div {
 
 a {
     text-decoration: none;
+    color:inherit;
 }
 
 .tal {
@@ -73,7 +84,7 @@ a {
     padding: 1em;
     margin: 1em;
     border-radius: 0.5em;
-    transition: opacity .15s ease-in;
+    transition: opacity .1s ease-in;
     opacity:0.7;
 }
 
@@ -91,7 +102,7 @@ a {
 }
 
 .grow:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Navigation bar */
@@ -132,8 +143,7 @@ a {
 
 #pages {
     position: fixed;
-    padding: 0 1em;
-    width: calc(100vw - 2em);
+    width: 100vw;
     top: var(--nav-height);
     height: var(--page-height);
     overflow:auto;
@@ -152,8 +162,8 @@ a {
 /* Accueil */
 
 #accueil {
-    width:100%;
-    height: auto;
+    width:95%;
+    margin: auto;
     display: grid;
     grid-template-columns: 40% auto;
     border-radius: 2em;
@@ -172,7 +182,7 @@ a {
     background-size: var(--dim2) var(--dim3);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     #accueil {
         grid-template-columns: 1fr;
     }
@@ -194,6 +204,7 @@ a {
 #profile-pic > h2 {
     color: var(--color1);
     margin : 1em auto;
+    text-align: center;
 }
 
 #profile-pic > div {
@@ -205,12 +216,25 @@ a {
     margin: 0 1em;
 }
 
-#profile-text > h1 {
-    color: var(--color1);
-    font-size: 4em;
-    margin : 1em auto 0.5em auto;
+#profile-text {
+    margin: auto 0;
 }
 
+#profile-text > h1 {
+    color: var(--color1);
+    text-align: center;
+    font-size: 4em;
+    margin : 0.5em auto 0.5em auto;
+}
+
+#profile-text > div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#profile-text > div p {
+    color: var(--dark-light);
+}
 
 #profile-text > h2 {
     text-align: center;
