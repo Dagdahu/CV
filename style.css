@@ -230,50 +230,50 @@ a {
     margin: auto 0;
 }
 
-#profile-pic > img {
+#profile_pic > img {
     width:70%;
     max-width:300px;
     margin : 3em auto 0 auto;
     box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
 }
 
-#profile-pic > h2 {
+#profile_pic > h2 {
     color: var(--color1);
     margin : 1em auto;
     text-align: center;
 }
 
-#profile-pic > div {
+#profile_pic > div {
     margin : 1em auto;
 }
 
-#profile-pic > div img {
+#profile_pic > div img {
     height: 5em;
     margin: 0 1em;
 }
 
-#profile-text {
+#profile_text {
     margin: auto 0;
 }
 
-#profile-text > h1 {
+#profile_text > h1 {
     color: var(--color1);
     text-align: center;
     font-size: 3em;
     margin : 0.5em auto 0.5em auto;
 }
 
-#profile-text > div {
+#profile_text > div {
     text-align: center;
     margin: 0 auto;
     color: var(--light-dark);
 }
 
-#profile-text > div:hover {
+#profile_text > div:hover {
     color: var(--dark-light);
 }
 
-#profile-text > h2 {
+#profile_text > h2 {
     text-align: center;
     font-size: 1.3em;
     color: var(--dark-light);

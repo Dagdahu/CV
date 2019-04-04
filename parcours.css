@@ -20,6 +20,12 @@
     }
 }
 
+/* @media screen and (max-width: 450px) {
+    #parcours > table.invert {
+        direction: rtl;
+    }
+} */
+
 #parcours .bg-col1 {
     background-color: var(--color3);
 }

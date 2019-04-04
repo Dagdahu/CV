@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Hugo CHATEL - CV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
 		<a class='tr trans' href="#competences" onclick="closeBurger()">Compétences</a>
 		<a class='tr trans' href="#projets" onclick="closeBurger()">Projets</a>
 		<a class='tr trans' href="#aboutMe" onclick="closeBurger()">A propos de moi</a>
-		<a class='tr trans burger' href="javascript:void(0);" onclick="toggleBurger()">
+		<a class='tr trans burger' href="javascript:void(0);" onclick="toggleBurger()" aria-label="Ouvrir le menu dépliant">
 			<div></div>
 			<div></div>
 			<div></div>
@@ -28,8 +28,8 @@
 	</div>
 	<div id="pages">
 			<div id='accueil' class="page">
-				<div id='profile-pic'>
-					<img id='profile' class='rounded' src='./logos/PhotoCV.jpg' alt='Profile pic' title='Hugo CHATEL'>
+				<div id='profile_pic'>
+					<img class='rounded' src='./logos/PhotoCV.jpg' alt='Profile pic' title='Hugo CHATEL'>
 					<h2>
 						Hugo CHATEL
 					</h2>
@@ -42,7 +42,7 @@
 						</a>
 					</div>
 				</div>
-				<div id='profile-text' class='title'>
+				<div id='profile_text' class='title'>
 					<h1>
 						Développeur Web
 					</h1>
@@ -99,7 +99,7 @@
 							</div>
 						</td>
 					</tr>
-					<tr class='trans grow'>
+					<tr class='trans grow invert'>
 						<td class="tar">
 							<div>
 								<h3>Mai - Août 2014</h3>
