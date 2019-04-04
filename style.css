@@ -1,22 +1,6 @@
 /* General page settings */
 
 html, body {
-    margin: 0;
-}
-
-@font-face {
-    font-family: 'Abel';
-    font-display: auto;
-    src: url(https://fonts.googleapis.com/css?family=Abel);
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    font-display: auto;
-    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
-}
-
-body {
     --light-light: #ebebeb;
     --light:#d7d7d7;
     --light-dark: #c4c4c4;
@@ -36,6 +20,23 @@ body {
     --page-height: calc(100vh - var(--nav-height));
     --trans-time: .15s;
 
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Abel';
+    font-display: auto;
+    src: url(https://fonts.googleapis.com/css?family=Abel);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-display: auto;
+    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+
+body {
+
     font-size: 2vw;
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
@@ -48,11 +49,11 @@ body > div {
 
 @media screen and (min-width: 1000px) {
     body {
-      font-size: 16px;
+      font-size: 20px;
     }
 }
   
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     body {
         font-size: 12px;
     }
@@ -88,18 +89,6 @@ a {
     cursor: pointer;
 }
 
-.button {
-    padding: 1em;
-    margin: 1em;
-    border-radius: 0.5em;
-    transition: opacity .1s ease-in;
-    opacity:0.7;
-}
-
-.button:hover {
-    opacity: 1;
-}
-
 /* Animations */
 
 .trans {
@@ -115,22 +104,20 @@ a {
 
 /* Navigation bar */
 
-#navigation {
+.topnav {
     position: fixed;
     top:0;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr repeat(4, auto);
     justify-content: right;
+    z-index:2;
+    background-color:var(--dark);
 }
 
-#navigation .home {
-    justify-self: start;
-}
-
-#navigation a {
-    border-radius: 0.5em;
+.topnav a {
     float: left;
+    border-radius: 9999px;
     padding: 0.5em;
     margin: 0.5em;
     display: block;
@@ -138,13 +125,57 @@ a {
     text-align: center;
 }
 
-#navigation a:hover {
+.topnav a:first-child {
+    justify-self: start;
+}
+
+.topnav .burger {
+    display: none;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.topnav .burger > div {
+    width: 1.5em;
+    height: 0.2em;
+    border-radius: 9999px;
+    background-color: var(--light-light);
+    margin: .2em 0;
+}
+
+.topnav a:hover {
     background-color:var(--light-light);
     color: var(--dark-dark);
 }
 
+.topnav a.burger:hover > div {
+    background-color:var(--dark-dark);
+}
+
 .nav-space {
     height:var(--nav-height);
+}
+
+@media screen and (max-width: 450px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .topnav.responsive {
+        grid-template-columns: 1fr;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        text-align: left;
+    }
 }
 
 /* Pages settings */
@@ -155,6 +186,7 @@ a {
     top: var(--nav-height);
     height: var(--page-height);
     overflow:auto;
+    z-index: 1;
 }
 
 .page {
@@ -171,21 +203,22 @@ a {
     grid-template-columns: 40% auto;
     border-radius: 2em;
 
+    background-color: var(--light-light);
+/*
     --col1 : rgba(255,255,255,.2);
     --col2 : rgba(0,0,0,.02);
     --dim1 : 3em;
     --dim2 : 3.5em;
     --dim3 : 6em;
-    background-color: var(--light);
     background-image:
         repeating-linear-gradient(120deg, var(--col1), var(--col1) 1px, transparent 1px, transparent var(--dim1)),
         repeating-linear-gradient(60deg, var(--col1), var(--col1) 1px, transparent 1px, transparent var(--dim1)),
         linear-gradient(60deg, var(--col2) 25%, transparent 25%, transparent 75%, var(--col2) 75%, var(--col2)),
         linear-gradient(120deg, var(--col2) 25%, transparent 25%, transparent 75%, var(--col2) 75%, var(--col2));
-    background-size: var(--dim2) var(--dim3);
+    background-size: var(--dim2) var(--dim3); */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     #accueil {
         grid-template-columns: 1fr;
     }
@@ -226,22 +259,23 @@ a {
 #profile-text > h1 {
     color: var(--color1);
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     margin : 0.5em auto 0.5em auto;
 }
 
 #profile-text > div {
     text-align: center;
     margin: 0 auto;
+    color: var(--light-dark);
 }
 
-#profile-text > div p {
+#profile-text > div:hover {
     color: var(--dark-light);
 }
 
 #profile-text > h2 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: var(--dark-light);
     margin : 1em auto;
 }
