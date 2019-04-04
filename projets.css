@@ -59,6 +59,7 @@
 #projets .description > p {
     text-align: justify;
     text-indent: 2em;
+    padding-right : 1em;
 }
 #projets .description > div {
     margin: 2em 0;
