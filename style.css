@@ -4,6 +4,18 @@ html, body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Abel';
+    font-display: auto;
+    src: url(https://fonts.googleapis.com/css?family=Abel);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-display: auto;
+    src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+
 body {
     --light-light: #ebebeb;
     --light:#d7d7d7;
@@ -27,7 +39,6 @@ body {
     font-size: 2vw;
     scroll-behavior: smooth;
     font-family: 'Ubuntu', sans-serif;
-    font-display: auto;
     background-color: var(--dark);
 }
 
@@ -41,9 +52,9 @@ body > div {
     }
 }
   
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     body {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 
@@ -53,7 +64,6 @@ body > div {
 
 .title {
     font-family: 'Abel', sans-serif;
-    font-display: auto;
     margin:0;
 }
 

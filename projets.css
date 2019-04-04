@@ -61,8 +61,13 @@
     text-indent: 2em;
     padding-right : 1em;
 }
+
 #projets .description > div {
     margin: 2em 0;
+}
+
+#projets .description > .links {
+    line-height: 3em;
 }
 
 #projets .description a {
@@ -70,7 +75,8 @@
     color: var(--color3-dark);
     padding: 0.5em 1em;
     border-radius: 9999px;
-    margin:0 2em;
+    margin:1em .5em;
+    white-space: nowrap;
 }
 
 #projets .description a:hover {
