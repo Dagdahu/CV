@@ -1,0 +1,107 @@
+#projets {
+    color: var(--light-light);
+}
+
+#projets > h1 {
+    padding:1em;
+    margin: 0;
+}
+
+#projets h2 {
+    text-align: left;
+    background-color: var(--light-light);
+    color: var(--dark-light);
+    padding: .5em 0 .5em 3em;
+}
+
+#projets h3 {
+    color: var(--light-dark);
+}
+
+#projets .warn {
+    color: var(--color3-light);
+}
+
+#projets .project {
+    text-align: center;
+}
+
+#projets .project > img, #shoplist_img {
+    display: inline-block;
+    vertical-align: top;
+    width:30%;
+    max-width: 250px;
+    margin: 2em 0;
+}
+
+#shoplist_img > h1 {
+    color: rgb(51, 51, 51);
+    font-weight: normal;
+    background-color: #fff;
+    background-image:
+        linear-gradient(90deg, transparent 1.5em, #abced4 1.5em, #abced4 1.55em, transparent 1.55em),
+        linear-gradient(#eee .05em, transparent .05em);
+    background-size: 100% .6em;
+    display: grid;
+    height: 6em;
+    width : 6em;
+    align-content: center;
+}
+
+#projets .description {
+    text-align: left;
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    padding-left:1em;
+}
+
+#projets .description > p {
+    text-align: justify;
+    text-indent: 2em;
+}
+#projets .description > div {
+    margin: 2em 0;
+}
+
+#projets .description a {
+    background-color: var(--light-light);
+    color: var(--color3-dark);
+    padding: 0.5em 1em;
+    border-radius: 9999px;
+    margin:0 2em;
+}
+
+#projets .description a:hover {
+    background-color: var(--color3);
+    color: var(--light-light);
+}
+
+#projets .skill {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    color: var(--dark);
+    padding: 0 1em;
+}
+
+#projets .skill:hover {
+    color: var(--light-light);
+}
+
+#projets .skill > img {
+    height: 3em;
+}
+
+#projets .skill > p {
+    margin: 0.5em 0;
+    padding: 0 0.5em;
+}
+
+#projets .logo {
+    width: 90%;
+}
+
+#projets .last {
+    height: 1.5em;
+}

@@ -5,31 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="parcours.css">
 	<link rel="stylesheet" type="text/css" href="competences.css">
+	<link rel="stylesheet" type="text/css" href="projets.css">
+	<link rel="stylesheet" type="text/css" href="aboutMe.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel|Ubuntu" rel="stylesheet">
 
 </head>
 <body>
 	<div id="navigation">
-		<a class='tr' href="#accueil" style="float:left">Accueil</a>
-		<ul>
-			<li class="link">
-				<a class='tr' href="#parcours">Parcours</a>
-			</li>
-			<li class="link">
-				<a class='tr' href="#competences">Compétences</a>
-			</li>
-			<li class="link">
-				<a class='tr' href="#projets">Projets</a>
-			</li>
-			<li class="link">
-				<a class='tr' href="#contact" style=>Contact</a>
-			</li>
-		</ul>
+		<a class='tr trans home' href="#accueil">Accueil</a>
+		<a class='tr trans' href="#parcours">Parcours</a>
+		<a class='tr trans' href="#competences">Compétences</a>
+		<a class='tr trans' href="#projets">Projets</a>
+		<a class='tr trans' href="#aboutMe" style=>A propos de moi</a>
 	</div>
 	<div id="pages">
 			<div id='accueil' class="page">
 				<div id='profile-pic'>
-					<img id='profile' class='rounded' src='./PhotoCV.jpg' alt='Photo' title='Hugo CHATEL'>
+					<img id='profile' class='rounded' src='./PhotoCV.jpg' alt='Profile pic' title='Hugo CHATEL'>
 					<h2>
 						Hugo CHATEL
 					</h2>
@@ -63,13 +55,16 @@
 			</div>
 			
 			<div id='parcours' class="page">
+				<h1 class='title'>
+					Parcours
+				</h1>
 				<table>
 					<tr>
 						<td class="tac">
-							<img class="logo" src='./logos/student_white.svg' alt='Student' title='Etudes'>
+							<img class="logo bg-col1" src='./logos/student_white.svg' alt='Student' title='Etudes'>
 						</td>
 						<td class="tac">
-							<img class="logo" src='./logos/tie_white.svg' alt='Tie' title='Expérience professionnelle'>
+							<img class="logo bg-col2" src='./logos/tie_white.svg' alt='Tie' title='Expérience professionnelle'>
 						</td>
 					</tr>
 					<tr class='trans grow'>
@@ -78,7 +73,7 @@
 								<h2>
 									Ecole d'Ingénieur
 								</h2>
-								<h3>
+								<h3 class="col1">
 									Polytech Grenoble - Université Joseph Fourier
 								</h3>
 								<p>
@@ -107,7 +102,7 @@
 								<h2>
 									Stagiaire
 								</h2>
-								<h3>
+								<h3 class="col2">
 									ULB - Université Libre de Bruxelles
 								</h3>
 								<p>
@@ -126,7 +121,7 @@
 								<h2>
 									Année d'échange à Montréal (Canada)
 								</h2>
-								<h3>
+								<h3 class="col1">
 									ETS - Ecole de Technologie Supérieur
 								</h3>
 								<p>
@@ -155,7 +150,7 @@
 								<h2>
 									Stagiaire
 								</h2>
-								<h3>
+								<h3 class="col2">
 									Altamendi
 								</h3>
 								<p>
@@ -179,7 +174,7 @@
 								<h2>
 									Ingénieur R&D - Traitement d'Image
 								</h2>
-								<h3>
+								<h3 class="col2">
 									Altamendi - <a class='cliquable' href="https://www.skaping.com/about/" title='Ouvrir la page Skaping' target='blank'>Skaping</a>
 								</h3>
 								<p>
@@ -204,7 +199,7 @@
 								<h2>
 									Auto formation
 								</h2>
-								<h3>
+								<h3 class="col1">
 									<a class="cliquable" href='https://www.udemy.com/' title='Ouvrir la page du site' target='blank'>Udemy</a> - Site de cours en ligne
 								</h3>
 								<p>
@@ -234,12 +229,10 @@
 						</td>
 					</tr>
 				</table>
-				<div id="background-transition">
-				</div>
 			</div>
 			
 			<div id='competences' class="page">
-				<h1>
+				<h1 class='title'>
 					Compétences
 				</h1>
 				<div id='skills'>
@@ -288,6 +281,29 @@
 					</div>
 					<div>
 						<h2 class='title'>
+							Autres langages...
+						</h2>
+						<ul>
+							<li>
+								<h3>
+									...de programmation
+								</h3>
+								<p>
+									C++, bash, php
+								</p>
+							</li>
+							<li>
+								<h3>
+									...humain
+								</h3>
+								<p>
+									Anglais courant (écrit et parlé)
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 class='title'>
 							Outils
 						</h2>
 						<ul>
@@ -296,7 +312,7 @@
 									Environnement de travail
 								</h3>
 								<p>
-									Linux (Ubuntu)
+									Linux : Ubuntu
 								</p>
 							</li>
 							<li>
@@ -312,7 +328,82 @@
 									Gestion de code
 								</h3>
 								<p>
-									GitHub
+									GitHub, (Bitbucket)
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id='focus'>
+					<div>
+						<h2 class='title'>
+							Pratiques
+						</h2>
+						<ul>
+							<li>
+								<h3>
+									Efficacité
+								</h3>
+								<p>
+									Optimisation
+								</p>
+								<p>
+									Clareté (du code)
+								</p>
+							</li>
+							<li>
+								<h3>
+									Qualité
+								</h3>
+								<p>
+									Responsive design
+								</p>
+								<p>
+									Sécurité
+								</p>
+								<p>
+									Clareté (du site)
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h2 class='title'>
+							Et demain ?
+						</h2>
+						<ul>
+							<li>
+								<h3>
+									Approfondir
+								</h3>
+								<p>
+									Spécificités du développement web
+								</p>
+								<p>
+									Bonnes pratiques
+									<p class="subp">
+										Structuration de code
+									</p>
+									<p class="subp">
+										Optimisation
+									</p>
+									<p class="subp">
+										Sécurité et Robustesse
+									</p>
+								</p>
+							</li>
+							<li>
+								<h3>
+									Découvrir
+								</h3>
+								<p>
+									Animation dans le web
+								</p>
+								<p>
+									UI design et UX design
+								</p>
+								<p>
+									Et bien plus encore !
 								</p>
 							</li>
 						</ul>
@@ -321,56 +412,300 @@
 			</div>
 			
 			<div id='projets' class="page">
-				<h1>
+				<h1 class='title'>
 					Projets
 				</h1>
-				<a class='toTop' href="#accueil">🔝</a>
+				<div class='project'>
+					<h2 class='title'>
+						Robofriend
+					</h2>
+					<img  class='rounded' src="./logos/robofriend.png" alt="Robot image">
+					<div class='description'>
+						<h3>
+							Description
+						</h3>
+						<p>
+							Robofriend est le résultat d'un exercice guidé du premier cours Udemy (Zero to Mastery) visant dans un premier temps à découvrir le développement d'application react, puis d'y incorporer redux.
+							Ce site permettait également de se familiariser aux api, puisqu'il y fait appel à deux reprises. La première fois pour récupérer une liste de noms, la deuxième pour associer à chaque nom une image de robot, celle-ci étant générée en se basant sur la chaine de caractères fournie en paramètre.
+						</p>
+						<p>
+							Le site ainsi que le code sont hebergés sur la plateforme GitHub.
+						</p>
+						<div class="tac">
+							<a class='trans' href='https://dagdahu.github.io/RobotFriends/' target="blank">Le site</a>
+							<a class='trans' href='https://github.com/Dagdahu/RobotFriends' target='blank'>Code source</a>
+						</div>
+						<h3>
+							Technologies
+						</h3>
+						<div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/HTML5.svg' alt='HTML5 logo' title='HTLM5'>
+								<p>HTML5</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/CSS3.svg' alt='CSS3 logo' title='CSS3'>
+								<p>CSS3</p>
+								<p>Tachyons</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/JS2.svg' alt='JavaScript logo' title='JavaScript'>
+								<p>JavaScript</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/React.svg' alt='React logo' title='React'>
+								<p>React</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/Redux.svg' alt='Redux logo' title='Redux'>
+								<p>Redux</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='project'>
+					<h2 class='title'>
+						SmartBrain
+					</h2>
+					<img  class='rounded' src="./logos/brain2.png" alt="Brain image">
+					<div class='description'>
+						<h3>
+							Description
+						</h3>
+						<p>
+							SmartBrain est le projet final du premier cours Udemy (Zero to Mastery). Son but était de créer un site utilisant une bonne partie du savoir aquis au long du cours.
+							En plus du site front-end, il introduit ainsi la notion de back-end : server et base de donnée (PostgreSQL). Un autre aspect intéréssant était d'aborder les notions d'identification en ligne et de gestion sécurisée des mots de passe.
+						</p>
+						<p>
+							Le code est disponible sur la plateforme GitHub. Le site et le serveur sont quant à eux herbergés sur la plateforme Heroku.
+							Heroku est une solution gratuite qui a un désavantage, le site se met en sommeil au bout d'un certain temps : <span class="warn">la première connexion au site peut donc prendre jusqu'à 30sec.</span>
+						</p>
+						<div class="tac">
+							<a class='trans' href='https://smart-brain-fp.herokuapp.com/' target="blank">Le site</a>
+							<a class='trans' href='https://github.com/Dagdahu/smart-brain-front' target='blank'>Code front</a>
+							<a class='trans' href='https://github.com/Dagdahu/smart-brain-api' target='blank'>Code back</a>
+						</div>
+						<h3>
+							Technologies
+						</h3>
+						<div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/HTML5.svg' alt='HTML5 logo' title='HTLM5'>
+								<p>HTML5</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/CSS3.svg' alt='CSS3 logo' title='CSS3'>
+								<p>CSS3</p>
+								<p>Tachyons</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/JS2.svg' alt='JavaScript logo' title='JavaScript'>
+								<p>JavaScript</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/React.svg' alt='React logo' title='React'>
+								<p>React</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/NodeJS_light.svg' alt='Node.js logo' title='Node.js'>
+								<p>Node.js</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/database_light.svg' alt='Data base logo' title='Base de donnée'>
+								<p>PostgreSQL</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='project'>
+					<h2 class='title'>
+						Shop List
+					</h2>
+					<div id='shoplist_img'>
+						<h1 class='rounded'>
+								Shop'<br>list
+						</h1>
+					</div>
+					<div class='description'>
+						<h3>
+							Description
+						</h3>
+						<p>
+							Shop List est exactement ce que son nom laisse deviner : un site de liste de course. Il s'agit de mon premier projet personnel, dont le but principal était de vérifier mes aquis.
+							Il est constitué d'un site frontal connecté à un serveur et une base de donnée (MySQL).
+						</p>
+						<p>
+							Les fonctionnalités voulues étaient de pouvoir créer plusieurs listes et de les supprimer, de pouvoir facilement ajouter ou retirer des articles, et enfin d'avoir une proposition des articles les plus souvent utilisés pour faciliter la création d'une nouvelle liste. Enfin, le site devait idéalement pouvoir fonctionner sur mobile.
+						</p>
+						<p>
+							Le code est disponible sur la plateforme GitHub. Le site et le serveur sont quant à eux herbergés sur la plateforme Heroku.
+							Heroku est une solution gratuite qui a un désavantage, le site se met en sommeil au bout d'un certain temps : <span class="warn">la première connexion au site peut donc prendre jusqu'à 30sec.</span>
+						</p>
+						<div class="tac">
+							<a class='trans' href='https://check-list-front.herokuapp.com/' target="blank">Le site</a>
+							<a class='trans' href='https://github.com/Dagdahu/check-list' target='blank'>Code front</a>
+							<a class='trans' href='https://github.com/Dagdahu/check-list-api' target='blank'>Code back</a>
+						</div>
+						<h3>
+							Technologies
+						</h3>
+						<div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/HTML5.svg' alt='HTML5 logo' title='HTLM5'>
+								<p>HTML5</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/CSS3.svg' alt='CSS3 logo' title='CSS3'>
+								<p>CSS3</p>
+								<p>Tachyons</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/JS2.svg' alt='JavaScript logo' title='JavaScript'>
+								<p>JavaScript</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/React.svg' alt='React logo' title='React'>
+								<p>React</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/NodeJS_light.svg' alt='Node.js logo' title='Node.js'>
+								<p>Node.js</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/database_light.svg' alt='Data base logo' title='Base de donnée'>
+								<p>MySQL</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='project'>
+					<h2 class='title'>
+						CV
+					</h2>
+					<img id='profile' class='rounded' src='./PhotoCV.jpg' alt='Profile pic' title='Hugo CHATEL'>
+					<div class='description'>
+						<h3>
+							Description
+						</h3>
+						<p>
+							Dernier projet en date, ce portfolio. Le but étant non seulement de créer un CV un peu plus dynamique qu'un 'simple' pdf, mais également de réaliser un site en pur HTML / CSS, sans passer par React ou Tachyon pour la mise en page.
+						</p>
+						<div class="tac">
+							<a class='tr' href="#accueil">Retour à l'accueil</a>
+							<a class='trans' href='https://github.com/Dagdahu/CV' target='blank'>Code source</a>
+						</div>
+						<h3>
+							Technologies
+						</h3>
+						<div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/HTML5.svg' alt='HTML5 logo' title='HTLM5'>
+								<p>HTML5</p>
+							</div>
+							<div class='skill grow trans'>
+								<img class='logo' src='./logos/CSS3.svg' alt='CSS3 logo' title='CSS3'>
+								<p>CSS3</p>
+							</div>
+						</div>
+					</div>
+					<h2 class='last'>
+						
+					</h2>
+				</div>
 			</div>
 
-			<div id='contact' class='page'>
-				<table>
-					<tr>
-						<td style="width:4em">
-							<img src='./logos/map.svg' alt='address'>
-						</td>
-						<td>
-							Rue Paul Bellamy<br>44000, Nantes
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src='./logos/phone.svg' alt='phone'>
-						</td>
-						<td>
-							06 77 99 99 95
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src='./logos/mailbox.svg' alt='mail'>
-						</td>
-						<td>
-							chatelhugo@hotmail.fr
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src='./logos/calendar.svg' alt='birthday'>
-						</td>
-						<td>
-							30 décembre 1992<br>26 ans
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src='./logos/car.svg' alt='car'>
-						</td>
-						<td>
-							Permis B
-						</td>
-					</tr>
-				</table>
-				<a class='toTop' href="#accueil">🔝</a>
+			<div id='aboutMe' class='page'>
+				<h1 class='title'>
+					A propos de moi
+				</h1>
+				<div>
+					<div class="col">
+						<h2 class='title'>
+							Centres d'interêt
+						</h2>
+						<h3 class='title'>
+							Culturels
+						</h3>
+						<ul>
+							<li>
+								Science
+							</li>
+							<li>
+								Nouvelles technologies
+							</li>
+							<li>
+								Education
+							</li>
+							<li>
+								Cinéma
+							</li>
+							<li>
+								Jeu vidéo (game design)
+							</li>
+							<li>
+								Ecologie
+							</li>
+						</ul>
+						<h3 class='title'>
+							Sport
+						</h3>
+						<ul>
+							<li>
+								Vélo
+							</li>
+							<li>
+								Course à pied
+							</li>
+						</ul>
+					</div>
+					<div class="col">
+						<h2 class='title'>
+							Carte de visite
+						</h2>
+						<table>
+							<tr>
+								<td style="width:4em">
+									<img src='./logos/map.svg' alt='address' class='grow trans' title='Adresse'>
+								</td>
+								<td>
+									Rue Paul Bellamy<br>44000, Nantes
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src='./logos/phone.svg' alt='phone' class='grow trans' title='Numéro de téléphone'>
+								</td>
+								<td>
+									06 77 99 99 95
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src='./logos/mailbox.svg' alt='mail' class='grow trans' title='Adresse mail'>
+								</td>
+								<td>
+									chatelhugo@hotmail.fr
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src='./logos/calendar.svg' alt='birthday' class='grow trans' title='Date de naissance'>
+								</td>
+								<td>
+									30 décembre 1992<br>26 ans
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src='./logos/car.svg' alt='car' class='grow trans' title='Permis de conduire'>
+								</td>
+								<td>
+									Permis B
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 	</div>
 </body>

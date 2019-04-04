@@ -1,0 +1,46 @@
+#aboutMe {
+    color: var(--light-light);
+}
+
+#aboutMe > h1 {
+    padding:1em;
+    margin: 0;
+}
+
+#aboutMe > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+  
+@media screen and (max-width: 500px) {
+    #aboutMe > div {
+        grid-template-columns: 90%;
+    }
+}
+
+#aboutMe .col {
+    justify-self: center;
+}
+
+#aboutMe h2 {
+    padding: 1em 1.5em;
+}
+
+#aboutMe h3 {
+    padding-left: 1em;
+    color: var(--color3-light);
+}
+
+#aboutMe ul {
+    list-style-type: none;
+    /* padding: 0 .5em; */
+}
+
+#aboutMe li {
+    padding: 0.2em .5em;
+}
+
+#aboutMe td {
+    padding-left: 1em;
+}

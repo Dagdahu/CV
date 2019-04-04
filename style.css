@@ -30,10 +30,6 @@ body {
     background-color: var(--dark);
 }
 
-.test {
-    fill: yellow;
-}
-
 body > div {
     width: 100vw;
 }
@@ -111,13 +107,13 @@ a {
     position: fixed;
     top:0;
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, auto);
+    justify-content: right;
 }
 
-#navigation ul {
-    list-style-type: none;
-    margin: 0 0 0 auto;
-    padding: 0;
-    overflow: hidden;
+#navigation .home {
+    justify-self: start;
 }
 
 #navigation a {
@@ -152,11 +148,6 @@ a {
 .page {
     min-height: var(--page-height);
     width:100%;
-}
-
-.toTop {
-    align-self: flex-end;
-    font-size: 2em;
 }
 
 /* Accueil */
@@ -241,11 +232,4 @@ a {
     font-size: 1.5em;
     color: var(--dark-light);
     margin : 1em auto;
-}
-
-
-
-
-#contact > table {
-    margin: auto;
 }
