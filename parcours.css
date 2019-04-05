@@ -5,7 +5,6 @@
 #parcours > h1 {
     margin:0;
     padding: 1em;
-    background-color: var(--dark);
 }
 
 #parcours > table {
@@ -80,16 +79,18 @@
     font-weight: 100;
 }
 
+@media screen and (max-width: 600px) {
+    #parcours h3 {
+        font-weight: bold;
+    }
+}
+
 #parcours ul {
     padding-left: 1em;
 }
 
 #parcours li {
     padding: .5em 0;
-}
-
-#parcours a {
-    color: var(--light-light)
 }
 
 #parcours a {
@@ -108,11 +109,3 @@
     color: var(--color1-dark);
     background-color: var(--light-light);
 }
-
-/* #background-transition {
-    height:20vh;
-    background: var(--dark);
-    background: -moz-linear-gradient(top, var(--dark) 0%, var(--light-light) 100%);
-    background: -webkit-linear-gradient(top, var(--dark) 0%, var(--light-light) 100%);
-    background: linear-gradient(to bottom, var(--dark) 0%, var(--light-light) 100%);
-} */
