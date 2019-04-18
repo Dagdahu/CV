@@ -208,25 +208,10 @@ a {
 /* Accueil */
 
 #accueil {
-    width:95%;
     margin: auto;
     display: grid;
     grid-template-columns: 40% auto;
-    border-radius: 2em;
-
     background-color: var(--light-light);
-/*
-    --col1 : rgba(255,255,255,.2);
-    --col2 : rgba(0,0,0,.02);
-    --dim1 : 3em;
-    --dim2 : 3.5em;
-    --dim3 : 6em;
-    background-image:
-        repeating-linear-gradient(120deg, var(--col1), var(--col1) 1px, transparent 1px, transparent var(--dim1)),
-        repeating-linear-gradient(60deg, var(--col1), var(--col1) 1px, transparent 1px, transparent var(--dim1)),
-        linear-gradient(60deg, var(--col2) 25%, transparent 25%, transparent 75%, var(--col2) 75%, var(--col2)),
-        linear-gradient(120deg, var(--col2) 25%, transparent 25%, transparent 75%, var(--col2) 75%, var(--col2));
-    background-size: var(--dim2) var(--dim3); */
 }
 
 @media screen and (max-width: 600px) {
@@ -250,24 +235,81 @@ a {
 
 #profile_pic > h2 {
     color: var(--color1);
-    margin : 1em auto;
+    margin : 1em auto 2em auto;
     text-align: center;
 }
 
-#profile_pic > div {
-    margin : 1em auto;
+#profile_pic .robot {
+    --antena-length : 1.5em;
+    --antena-width : 0.2em;
+    --antena-dot : 1em;
+    --eye-height : 5em;
+    text-align: center;
+    margin: var(--antena-dot) auto 2em auto;
 }
 
-#profile_pic > div img {
-    height: 5em;
-    margin: 0 1em;
+#profile_pic .antenna {
+    display: inline-block;
+    height:var(--antena-length);
+    width:var(--antena-width);
+    margin: 0 calc(.5 * var(--eye-height));
+    background-color: var(--dark-dark);
+}
+
+#profile_pic .robot:hover .antenna > div {
+    transform: scale(1.5);
+}
+
+#profile_pic .antenna > div {
+    height: var(--antena-dot);
+    width: var(--antena-dot);
+    position: relative;
+    top: calc(-.9 * var(--antena-dot));
+    left: calc(-.5 * (var(--antena-dot) - var(--antena-width)));
+    background-color: var(--dark);
+}
+
+#profile_pic .head {
+    width: calc(3 * var(--eye-height));
+    margin: 0 auto;
+    border: 0.2em solid var(--dark);
+    border-radius: 0.5em 0.5em 2em 2em;
+    text-align: center;
+}
+
+#profile_pic div.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+
+#profile_pic div.logos img {
+    height: var(--eye-height);
+}
+
+#profile_pic a.download {
+    position: relative;
+    bottom: -0.5em;
+    color: var(--light-light);
+    background-color: var(--dark);
+    border: 0.25em solid var(--dark);
+    padding: 0.25em 2em;
+    height: var(--mouth-height);
+    text-align: center;
+    border-radius: 9999px;
+}
+
+#profile_pic a.download:hover {
+    color: var(--dark-dark);
+    background-color:var(--light-light);
 }
 
 #profile_text {
     margin: auto 0;
 }
 
-#profile_text > h1 {
+#accueil h1 {
     color: var(--color1);
     text-align: center;
     font-size: 3em;
@@ -285,7 +327,7 @@ a {
 }
 
 #profile_text > h2 {
-    text-align: center;
+    text-align: right;
     font-size: 1.3em;
     color: var(--dark-light);
     margin : 1em auto;
