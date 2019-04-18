@@ -1,5 +1,6 @@
 #aboutMe {
     color: var(--light-light);
+    align-content: center;
 }
 
 #aboutMe > h1 {
@@ -7,14 +8,15 @@
     margin: 0;
 }
 
-#aboutMe > div {
+#aboutMe > div.grid {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
+    margin-bottom: 3em;
 }
   
 @media screen and (max-width: 500px) {
-    #aboutMe > div {
+    #aboutMe > div.grid {
         grid-template-columns: 90%;
     }
 }
@@ -43,4 +45,19 @@
 
 #aboutMe td {
     padding-left: 1em;
+}
+
+#aboutMe a {
+    color: var(--dark);
+    background-color: var(--light-light);
+    border: 0.25em solid var(--light-light);
+    padding: 0.5em 2em;
+    height: var(--mouth-height);
+    text-align: center;
+    border-radius: 9999px;
+}
+
+#aboutMe a:hover {
+    color: var(--light-light);
+    background-color:var(--dark);
 }
