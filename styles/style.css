@@ -241,7 +241,7 @@ a {
 
 #profile_pic .robot {
     --antena-length : 1.5em;
-    --antena-width : 0.2em;
+    --antena-width : .2em;
     --antena-dot : 1em;
     --eye-height : 5em;
     text-align: center;
@@ -254,6 +254,7 @@ a {
     width:var(--antena-width);
     margin: 0 calc(.5 * var(--eye-height));
     background-color: var(--dark-dark);
+    vertical-align: bottom;
 }
 
 #profile_pic .robot:hover .antenna > div {
@@ -272,8 +273,8 @@ a {
 #profile_pic .head {
     width: calc(3 * var(--eye-height));
     margin: 0 auto;
-    border: 0.2em solid var(--dark);
-    border-radius: 0.5em 0.5em 2em 2em;
+    border: .2em solid var(--dark);
+    border-radius: .5em .5em 2em 2em;
     text-align: center;
 }
 
