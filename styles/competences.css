@@ -18,7 +18,7 @@
 
 #competences > div > div {
     width: 45%;
-    margin: 1em 0;
+    margin: 1em auto;
     padding-bottom : 1em;
     border-radius: 0.5em;
 }

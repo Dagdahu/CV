@@ -36,7 +36,6 @@
 
 #aboutMe ul {
     list-style-type: none;
-    /* padding: 0 .5em; */
 }
 
 #aboutMe li {
@@ -45,6 +44,11 @@
 
 #aboutMe td {
     padding-left: 1em;
+}
+
+#aboutMe .download {
+    margin: 2em auto;
+    text-align: center;
 }
 
 #aboutMe a {
